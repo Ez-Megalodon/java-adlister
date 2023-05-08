@@ -7,9 +7,21 @@
 <body>
 
   <h1>Welcome to AdLister</h1>
+
   <form action="/welcome" method="post">
       <label for="username">Username</label>
       <input type="text" name="username" id="username">
+      <br>
+      <label for="carType">Car Name:</label>
+      <input type="text" name="carType" id="carType">
+
+      <p>Is your car 4x4 or all-wheel drive?</p>
+      <label for="Awd">Yes</label>
+      <input type="radio" name="carAwd" id="Awd" value="carAwd">
+
+      <label for="notAwd">No</label>
+      <input type="radio" name="carAwd" id="notAwd" value="carNotAwd">
+
       <input type="submit" value="enter">
   </form>
 
