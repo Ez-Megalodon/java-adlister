@@ -11,15 +11,16 @@ public class WelcomeServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String car = req.getParameter("car");
+        String username = req.getParameter("username");
         PrintWriter out = resp.getWriter();
         resp.setContentType("text/html");
 
-        if (car != null){
-            out.println("<h3> Your " + car + " is awesome!</h3>");
+        if (username != null){
+            out.println("<h3> Hello, " + username + "!</h3>");
         } else {
-            out.println("<h3>Tell me about your car!</h3>");
+            out.println("<h3>Hello, World!</h3>");
         }
+
     }
 
     @Override
