@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 @WebServlet("/count")
-public class countServlet extends HttpServlet {
+public class CountServlet extends HttpServlet {
 
     private static int counter = 0;
 
