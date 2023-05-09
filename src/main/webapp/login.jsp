@@ -28,7 +28,7 @@
     </form>
 
     <%
-        if (request.getMethod().equals("POST")) {
+        if (request.getMethod().equalsIgnoreCase("POST")) {
             String username = request.getParameter("username");
             String password = request.getParameter("password");
             if ("admin".equals(username) && "password".equals(password)) {
