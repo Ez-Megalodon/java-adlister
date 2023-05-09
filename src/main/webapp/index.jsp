@@ -7,15 +7,15 @@
 <html>
 <head>
     <title><%= "some title" %></title>
+    <%@include file="partials/head.jsp"%>
 </head>
 <body>
-
-    <h2>The current count is: <%= count %></h2>
     <c:if test="true">
         <h1>Variable names should be very descriptive</h1>
     </c:if>
     <c:if test="false">
         <h1>single letter variable names are good</h1>
     </c:if>
+
 </body>
 </html>
