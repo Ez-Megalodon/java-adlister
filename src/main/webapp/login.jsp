@@ -31,7 +31,7 @@
         if (request.getMethod().equalsIgnoreCase("POST")) {
             String username = request.getParameter("username");
             String password = request.getParameter("password");
-            if ("admin".equals(username) && "password".equals(password)) {
+            if (username.equals("admin") && password.equals("password")) {
                 // If the credentials are correct, redirect the user to a success page
                 response.sendRedirect("profile.jsp");
             } else {
