@@ -6,17 +6,14 @@
 
 <html>
 <head>
-    <title><%= "Index" %></title>
-    <%@include file="partials/head.jsp"%>
+    <jsp:include page="partials/head.jsp">
+        <jsp:param name="title" value="Welcome to my site!" />
+    </jsp:include>
 </head>
 <body>
-    <%@include file="partials/navbar.jsp"%>
-    <c:if test="true">
-        <h1>Variable names should be very descriptive</h1>
-    </c:if>
-    <c:if test="false">
-        <h1>single letter variable names are good</h1>
-    </c:if>
-
+    <jsp:include page="partials/navbar.jsp" />
+    <div class="container">
+        <h1>Welcome to the Adlister!</h1>
+    </div>
 </body>
 </html>
