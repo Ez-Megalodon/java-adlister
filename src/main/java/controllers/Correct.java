@@ -15,9 +15,4 @@ public class Correct extends HttpServlet {
         req.getRequestDispatcher("/guess/outcome.jsp").forward(req, resp);
     }
 
-//    @Override
-//    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        req.setAttribute("outcome", "congratulations! you guessed it correctly!");
-//        req.getRequestDispatcher("/guess/outcome.jsp").forward(req,resp);
-//    }
 }
