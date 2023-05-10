@@ -1,10 +1,12 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Pizza Order</title>
+    <jsp:include page="/partials/head.jsp"/>
 </head>
 <body>
-
+<jsp:include page="/partials/navbar.jsp" />
     <h1>Build your pizza.</h1>
     <form action="${pageContext.request.contextPath}/pizza-order">
         <label for="crust">Pizza Crust</label>

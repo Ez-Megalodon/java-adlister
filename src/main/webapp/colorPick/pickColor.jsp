@@ -3,9 +3,10 @@
 <html>
 <head>
     <title>Pick Color</title>
+    <jsp:include page="/partials/head.jsp"/>
 </head>
 <body>
-
+<jsp:include page="/partials/navbar.jsp" />
 <h1>Enter your favorite color!</h1>
 <form action="${pageContext.request.contextPath}/viewcolor" method="post">
     <label for="color">Color:</label>
