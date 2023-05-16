@@ -1,5 +1,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%! int count = 0; %>
+<% count += 1; %>
+
 <html>
 <head>
     <jsp:include page="/WEB-INF/partials/head.jsp">
